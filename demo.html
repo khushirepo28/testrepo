@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function sum(){
+			//(for addition)
+			var n1=document.getElementById('fno').value;
+			var n2=document.getElementById('sno').value;
+			var s=Number(n1)+Number(n2);
+			document.getElementById('rno').value=s;
+		}
+            //(for sub)
+            function sub(){
+            var n1=document.getElementById('fno').value;
+            var n2=document.getElementById('sno').value;
+            var s=Number(n1)-Number(n2);
+            document.getElementById('rno').value=s;	
+            }
+                  //(for mul)
+            function mul(){
+            var n1=document.getElementById('fno').value;
+            var n2=document.getElementById('sno').value;
+            var s=Number(n1) * Number(n2);
+            document.getElementById('rno').value=s;	
+            }
+                   //(for div)
+            function div(){
+            var n1=document.getElementById('fno').value;
+            var n2=document.getElementById('sno').value;
+            var s=Number(n1) / Number(n2);
+            document.getElementById('rno').value=s;	
+            }
+
+
+			// var e=document.getElementById('myp');
+			// e.innerHTML='program';
+			// e.style.color='blue';
+			// e.style.backgroundColor='pink';
+			// e.style.textAlign='center'
+			// e.style.fontSize='40px'
+			// var e=document.getElementById('img');
+			// e.setAttribute('src','imageJs/img.jpeg');
+			// e.removeAttribute('src');
+			// var e=document.getElementById('input');
+			// // e.placeholder='enter your name';
+			// e.value='khushi singh';
+		
+	</script>
+</head>
+<body>
+	<input type="no" name="" id="fno">
+	<input type="no" name="" id="sno">
+	<input type="no" name="" id="rno">
+	<button onclick="sum()">sum</button>
+	<button onclick="sub()">sub</button>
+	<button onclick="mul()">mul</button>
+	<button onclick="div()">div</button>
+<!-- <p id="myp"></p>
+<img id="img"> -->
+<!-- <button onclick="f1()">click me</button> 
+<input type="text" id="input"> -->
+</body>
+</html>

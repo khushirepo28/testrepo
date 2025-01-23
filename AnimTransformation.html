@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TRANSFORM</title>
+	<style type="text/css">
+		body{
+			background-color: lightgoldenrodyellow;
+		}
+		.d1{
+			width: 400px;
+			height: 400px;  
+			border: 2px solid white;
+			background-image: url(https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg);
+			background-size: cover;
+			background-position: center;
+/*			2s or 3s time duration show kar raha hai*/
+/*            rotate karwane ke liye kisi angle pe transform ka use karte hai*/
+			transition: width 2s, height 3s, trasform 1s;
+			transition-delay: 3s;
+/*			kitne der tak chalna chahiye*/
+			transition-duration: 13sec;
+/*			transition-timing-function:linear easein,easeout,ease;*/
+			box-shadow: 4px 5px 7px 2px yellow;
+			animation-name: x;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+			position: relative;
+			border-radius: 50%;
+			background-color: darkred;
+			animation-timing-function:line ;
+
+		}
+		body{
+			background-color: whitesmoke;
+		}
+		@keyframes x{
+    /*0% {
+      background-color: blue;
+    }
+    25% {
+      background-color: yellow;
+    }
+    50% {
+      background-color: red;
+    }
+    100% {
+      background-color: lightcyan;
+    }*/
+ 
+  0%{
+  	left: 0px;
+  	right: 0px;
+  }
+  25%{
+  	top: 0px;
+  	left: 400px;
+  }
+  50%{
+  	left: 400px;
+  	top: 400px;
+
+  }
+  75%{
+  	top: 400px;
+  	left: 0px;
+  }
+  100%{
+  	left: 0px;
+  	top: 0px;
+  }
+
+	}
+		.d1:hover{
+			width: 500px;
+			height: 500px;
+/*			transform rotate pe koi bhi padding-top picture ghum sakta hai*/
+		transform: rotate(45deg);  
+transform: scale(1.5);*/
+/*		}*/
+/*		.d1:hover{*/
+/*	translate mein size change karega*/
+/transform: skew; se curve hota hai kuch bhi/
+/*			transform: translate(100px,50px);*/
+/*            transform: rotate(90deg);*/
+/transform: scale(1.2);/
+/scale x sirf width increase karega/
+/transform: scalex(2);/
+/or scale y sirf height increase karega/
+/transform: scaley(1.8);/
+/transform: skewx(20deg);/
+/*transform: skewy(30deg);
+
+		.box{i
+			width: 200px;
+			height: 200px;
+			position: relative;
+			border: 2px solid maroon;
+			animation-name: y;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+			background-color: navajowhite;
+			border-radius: 50%;
+			box-shadow: 5px 8px 6px 7px yellow;
+
+		}
+		
+		#box1{
+			animation-timing-function: linear;
+		}
+		#box2{
+			animation-timing-function: ease;
+		}
+		#box3{
+			animation-timing-function: ease-in;
+		}
+		#box4{
+			animation-timing-function: ease-out:;
+		}
+		#box5{
+			animation-timing-function: ease-in-out;
+		}
+		@keyframes y{
+			from{
+				left: 0px;
+			}
+			to{
+				left: 400px;
+				background-color: blue;
+			}
+		}
+
+
+		
+	</style>
+</head>
+<body> 
+	<div class="d1"></div>
+	<div class="box" id="box1"></div>
+	<div class="box" id="box2"></div>
+	<div class="box" id="box3"></div>
+	<div class="box" id="box4"></div>
+	<div class="box" id="box5"></div>
+
+</body>
+</html>

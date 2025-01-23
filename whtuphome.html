@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #209cee;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 150px);
+            gap: 10px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        .item:nth-child(1),
+        .item:nth-child(6),
+        .item:nth-child(7) {
+            background-color: #34495e;
+        }
+
+        .item:nth-child(2),
+        .item:nth-child(3),
+        .item:nth-child(8),
+        .item:nth-child(9) {
+            background-color: #1abc9c;
+        }
+
+        .item:nth-child(4),
+        .item:nth-child(5) {
+            background-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">HEADING<br>Your content goes here. .</div>
+        <div class="item">HEADING</div>
+        <div class="item">HEADING</div>
+        <div class="item">HEADING</div>
+        <div class="item">HEADING<br>Your content goes here. .</div>
+        <div class="item">HEADING<br>Your content goes here.</div>
+        <div class="item">HEADING<br>Your content goes here. </div>
+        <div class="item">HEADING<br>Your content goes here. </div>
+        <div class="item">HEADING<br>Your content goes here. </div>
+    </div>
+</body>
+</html>

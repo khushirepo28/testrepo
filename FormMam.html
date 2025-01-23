@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function f1(){
+			// var n1=document.forms["myform"]["textfname"].value;
+			// var n2=document.forms["myform"]["textlname"].value;
+			// document.getElementById("myp").innerHTML=n1+" "+n2;
+
+			// //paragraph
+			// var p=document.createElement('p');
+			// p.innerHTML="programming classes";
+			// document.body.append(p);
+
+			// //div
+			// var div=document.createElement('div');
+			// div.style.height="200px";
+			// div.style.width="200px";
+			// div.style.border="2px solid black";
+			// div.style.backgroundColor="yellow";
+			// document.body.append(div);
+			// div.append(p);
+			// var button=document.createElement('button');
+			// button.innerHTML='click me';
+			// div.prepend(button); // append (button on middle) prepend (button on top) Before() After()
+
+		}
+
+		function createTable(rows,cols){
+			let table=document.createElement('table');
+			table.style.borderCollapse='collapse';
+			for(i=0;i<rows;i++);{
+				const tr=document.createElement('tr');
+			for(j=0;j<cols;j++){
+				const td=document.createElement('td');
+				td.innerHTML='hello';
+				td.style.border="2px solid black";
+				tr.append(td);
+			   }
+			   table.append(tr);
+			}
+			document.body.append(table);
+		}
+		// createTable(4,5);
+	</script>
+</head>
+<body>
+	<button onclick="createTable(4,5);">click me</button>
+	<!-- <button onclick="f1()">click me</button> -->
+<!-- <form name="myform">
+	<label>Enter first name</label>
+	<input type="text" name="textfname">
+	<label>Enter last name</label>
+	<input type="text" name="textlname">
+	<input type="submit" name="btnsubmit" onclick="f1()"> -->
+<!-- </form> -->
+<!-- <p id="myp"></p> --> 
+</body>
+</html>

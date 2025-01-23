@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mediaquries home</title>
+	<style type="text/css">
+		.container{
+			display: flex;
+			justify-content: space-between;
+			background-color: yellowgreen;
+			justify-items: center;
+			align-items: center;
+			height: 500px;
+
+		}
+		.a1{
+			justify-items: center;
+			width: 200px;
+			height: 200px;
+/*			border-radius: 50%;*/
+			background-color: chocolate;
+			border: 7px solid blue;
+			text-align: center;
+			box-sizing: border-box;
+			padding-top: 150px;
+/*			margin-top: 300px;*/
+			}
+			 .al {
+				
+			}
+			@media(max-width: 900px){
+				.container{
+					background-color: yellowgreen;
+				}
+			}
+			.a1{
+				width: 140px;
+				height: 140px;
+				border: 3px solid beige;
+				background-color: skyblue;
+				text-align: center;
+			}
+			@media(max-width: 600px){
+				.container{
+					background-color: darkred;
+					display: flex;
+					justify-content: space-between;
+					justify-items: center;
+				}
+			}
+			.a1{
+				width:300px;
+				height: 300px;
+				border: 1px dashed darkgrey;
+				background-color: beige;
+			}
+			@media(max-width: 400px){
+				.container{
+					background-color: hotpink;
+					justify-content: center;
+					flex-direction: column;
+					justify-content: space-evenly;
+				}
+			}
+			.a1{
+				width: 300px;
+				height: 300px;
+				border: 1px dotted brown;
+				background-color: red;
+			}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<div class="a1">Hello</div>
+	<div class="a1">World</div>
+	<div class="a1">From</div>
+	<div class="a1">Computer</div>
+	</div>
+</body>
+</html>

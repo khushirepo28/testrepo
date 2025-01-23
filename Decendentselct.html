@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Advance Selector</title>
+	<style type="text/css">
+		.a1{
+			height: 500px;
+			width: 500px;
+			border: 2px solid black;
+			/*font-weight: bold;*/
+		}
+		/*decendent selector*/
+		div p{
+			color: purple;
+		}
+		/*child selector*/
+		div>p{
+			color: darkred;
+		}
+		div h1{
+			color: greenyellow;
+		}
+		/*Adjustment sibiling selector*/
+		div+p{
+			color: brown;
+		}
+		/*general sibling selector*/
+		div~p{
+			color: blue;
+		}
+		 /*redical Gredient 3type
+		 1.linner
+		 2.conic*/ 
+		 .c1{
+		 	height: 500px;
+		 	width: 500px;
+		 	border: 2px solid black;
+		 /*direction background-image: linear-gradient(to right,darkred,pink,green,darkred,blue);*/
+/*		 	background-image: linear-gradient(red,greenyellow,yellow,pink,green,darkred,blue);*/
+            /*diagolnalbackground-image: linear-gradient(to bottom right,darkred,pink,green,darkred,blue);*/
+            /*background-image: linear-gradient(red,darkred 30%,pink,green 20%,darkred,blue 40%);*/
+            /*background-image: linear-gradient(150deg,blue,greenyellow,darkred,pink);*/
+            background-image: repeating-linear-gradient(150deg,blue 10%,pink 20%,greenyellow 10%);
+		 }
+		 .c1{
+		 	width: 500px;
+		 	height: 500px;
+		 	border: 2px solid black;
+		 	/*background-image: repeating-radial-gradient(red 10%,red 10%,green 30%,blue 10%);*/
+		 	background-image: conic-gradient(from 180deg,red,blue,greenyellow);
+		 	background-image: conic-gradient(red 0deg,red 90deg,blue 90deg,blue 180deg,greenyellow 180deg,greenyellow 270deg, brown 270deg, brown 360deg);
+		 }
+	</style>
+</head>
+<body>
+	<div class="c1"></div>
+	<br><br>
+<div class="a1">
+	<p>The descendant combinator is technically one or more CSS white space characters — the space character and/or one of four control characters: carriage return, form feed, new line, and tab characters — between two selectors in the absence of another combinator. Additionally, the white space characters of which the combinator is comprised may contain any number of CSS comments.Syntax</p><h1>what is selector</h1>
+	<section>
+	<p>two selectors in the absence of another combinator. Additionally, the white space characters of which the combinator is comprised may contain any number of CSS comments.Syntax two selectors in the absence of another combinator. Additionally, the white space characters of which the combinator is comprised may contain any number of CSS comments.Syntax</p>
+</section>
+</div>
+
+	<p>The descendant combinator is technically one or more CSS white space characters — the space character and/or one of four control characters: carriage return, form feed, new line, and tab characters — between two selectors in the absence of another combinator. Additionally, the white space characters of which the combinator is comprised may contain any number of CSS comments.Syntax</p>
+	<div class="a1">
+	<p>The descendant combinator is technically one or more CSS white space characters — the space character and/or one of four control characters: carriage return, form feed, new line, and tab characters — between two selectors in the absence of another combinator. Additionally, the white space characters of which the combinator is comprised may contain any number of CSS comments.Syntax</p></div>
+	<p>The descendant combinator is technically one or more CSS white space characters — the space character and/or one of four control characters: carriage return, form feed, new line, and tab characters — between two selectors in the absence of another combinator. Additionally, the white space characters of which the combinator is comprised may contain any number of CSS comments.Syntax</p>	
+	</div>
+</body>
+</html>

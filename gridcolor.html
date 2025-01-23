@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gridcolor</title>
+	<style type="text/css">
+		.container{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-rows: repeat(4, 1fr);
+
+		}
+		.a1{
+			border: 2px solid black;
+			height: 200px;
+			width: 200px;
+			background-color: skyblue;
+		}
+		#box1{
+			grid-row-start: 2;
+			grid-row-end: 3;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+<div class="a1" id="box1">1</div>
+<div class="a1" id="box2">2</div>
+<div class="a1" id="box3">3</div>	
+<div class="a1">4</div>
+<div class="a1">5</div>
+<div class="a1">6</div>
+<div class="a1">7</div>
+<div class="a1">8</div>
+<div class="a1">9</div>
+<div class="a1">10</div>
+<div class="a1">11</div>
+<div class="a1">12</div>
+</div>
+</body>
+</html>
